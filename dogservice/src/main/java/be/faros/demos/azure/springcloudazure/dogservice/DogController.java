@@ -9,7 +9,7 @@ public class DogController {
 
     private final String dogMessage;
 
-    public DogController(@Value("${dogservice:message}") String dogMessage) {
+    public DogController(@Value("${dog.message:woof}") String dogMessage) {
         this.dogMessage = dogMessage;
     }
 
